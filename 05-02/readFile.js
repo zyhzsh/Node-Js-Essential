@@ -15,4 +15,11 @@ fs.readFile("./assets/Readme.md","utf-8",(err,text)=>{
     console.log(text);
 });
 
-
+//Read it as binary file
+fs.readFile("./assets/alsex.jpg",(err,img)=>{
+    if(err){
+        console.log(err.message);
+        process.exit();
+    }
+    console.log(img);
+});
